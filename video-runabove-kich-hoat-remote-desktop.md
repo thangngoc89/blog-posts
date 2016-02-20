@@ -32,7 +32,7 @@ Tiếp theo, cửa sổ login sẽ xuất hiện
 
 ![setup runabove 1](/images/2015/01/setup-runabove-3_xnb0om.jpg)
 
-Kéo trình duyệt lên trên đầu sẽ thấy nút Send** Ctrl + Alt + Delete.** Nhấn vào đó để đăng nhập
+Kéo trình duyệt lên trên đầu sẽ thấy nút Send **Ctrl + Alt + Delete.** Nhấn vào đó để đăng nhập
 
 ![setup runabove 4](/images/2015/01/setup-runabove-4_rxxrkb.jpg)
 
