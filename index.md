@@ -1,4 +1,4 @@
 ---
-title: Trang Chủ
+title: Khoa Nguyen Blog
 layout: Homepage
 ---
