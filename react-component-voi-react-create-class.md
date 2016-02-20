@@ -43,6 +43,8 @@ Nhưng mình khuyên là đừng làm như vậy, hãy bỏ ngay ý tưởng dù
 ES6 class chỉ để thực hiện một chuỗi thừa kế dài, hãy dùng
 `React.createClass` và kèm với mixin.
 
+@[toc]
+
 # Lí do để dùng `React.createClass`
 
 ## "Tôi thích hàm auto-binding"
