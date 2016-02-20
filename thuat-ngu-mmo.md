@@ -2,7 +2,7 @@
 layout: Post
 title: Các thuật ngữ MMO thông dụng nhất
 date: 2014-11-15 20:27:07.000000000 -05:00
-tags: mmo
+tags: [mmo]
 ---
 
 @[toc]

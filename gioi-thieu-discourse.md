@@ -2,7 +2,7 @@
 layout: Post
 title: Giới thiệu Discourse
 date: 2014-12-01 17:53:10
-tag: discourse
+tags: [discourse]
 ---
 
 # Discourse là gì?

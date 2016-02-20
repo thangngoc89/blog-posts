@@ -2,7 +2,7 @@
 layout: Post
 title: ! 'DigitalOcean : Cách đăng kí VPS và sử dụng promo code'
 date: 2014-11-17 10:12:01
-tag: vps, digital-ocean
+tags: [vps]
 ---
 
 # VPS là gì ?

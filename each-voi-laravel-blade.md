@@ -3,7 +3,7 @@ layout: Post
 title: '@each với Laravel Blade'
 date: 2015-03-16 10:00:00
 description: 'Sử dụng @each trong Laravel Blade để giúp template gọn gàng hơn'
-tags: blade, template
+tags: [laravel]
 ---
 
 # Giới thiệu

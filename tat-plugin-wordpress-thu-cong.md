@@ -2,7 +2,7 @@
 layout: Post
 title: Tắt plugin Wordpress khi không vào được Bảng điều khiển
 date: 2014-11-16 14:25:54
-tag: wordpress
+tags: [wordpress]
 ---
 
 Hôm qua mình có nghịch với mấy cái plugin WordPress và kết quả là không truy cập vào Bảng điểu khiển (Admin Dashboard) được nữa. Nên chẳng thể nào tắt plugin ấy đi được. Sau một hồi tìm kiếm, mình tìm ra tới 2 giải pháp để tắt plugin WordPress mà không cần truy cập và Bảng điều khiển. Mời các bạn tham khảo nếu đang gặp trường hợp này nhé.

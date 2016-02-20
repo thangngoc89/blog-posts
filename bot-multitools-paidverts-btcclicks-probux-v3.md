@@ -2,7 +2,7 @@
 layout: Post
 title: '[BOT] MultiTools Paidverts & BTCClicks & ProBux v3'
 date: 2014-11-16 09:48:08
-tags: mmo, paidverts, bot
+tags: [mmo, bot]
 ---
 
 # ![MultiTools for Paidverts BTCClicks Probux](/images/2015/01/Screenshot-2014-11-16-14_33_59_c4qyk2.png)

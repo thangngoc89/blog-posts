@@ -2,6 +2,7 @@
 layout: Post
 title: "[Video] RunAbove : Kích hoạt Remote Desktop"
 date: 2014-11-21 07:34:20
+tags: [vps]
 ---
 
 Mặc định thì trên 1 tài khoản mới và VPS mới tạo thì Remote Desktop không được kích. Điều này gây khó khăn cho một số bạn. Bài viết này mình sẽ hướng dẫn cách kích hoạt Remote Desktop trên RunAbove nhé.

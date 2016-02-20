@@ -2,7 +2,7 @@
 layout: Post
 title: 'Câu lệnh Bash bạn hay sử dụng'
 date: 2016-01-26 07:00:00
-tags: bash
+tags: [bash]
 ---
 
 Nếu bạn muốn xem các câu lệnh bash được sử dụng nhiều nhất

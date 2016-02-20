@@ -2,7 +2,7 @@
 layout: Post
 title: Tạo menu cho Discourse
 date: 2015-01-09 00:10:59
-tag: discourse
+tags: [discourse, css]
 ---
 
 # Giới thiệu

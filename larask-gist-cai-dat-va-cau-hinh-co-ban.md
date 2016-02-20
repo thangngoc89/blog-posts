@@ -3,7 +3,7 @@ layout: Post
 title: ! 'Cài đặt và thiết lập cơ bản cho Larask Gist'
 date:   2015-03-12 18:00:00
 description: ! 'Hướng dẫn cài đặt Laravel 5 và thiết lập cơ bản cho ứng dụng'
-tags: dev, larask gist
+tags: [laravel]
 ---
 
 Đây là bài viết trong [series Larask Gist](/gioi-thieu-series-larask-gist/).

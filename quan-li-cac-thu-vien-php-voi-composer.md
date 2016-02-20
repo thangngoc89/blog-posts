@@ -2,7 +2,7 @@
 layout: Post
 title: Quản lí các thư viện PHP với Composer
 date: 2015-01-03 13:09:22
-tags: php, composer
+tags: [php, composer]
 ---
 
 @[toc]

@@ -1,7 +1,8 @@
 ---
 layout: Post
 title: iMacros Omnia3 cắm máy kiếm euro tự động
-date: 2014-11-23 10:51:23.000000000 -05:00
+date: 2014-11-23 10:51:23
+tags: [laravel]
 ---
 
 > Update

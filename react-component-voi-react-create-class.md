@@ -2,7 +2,7 @@
 layout: Post
 title: "React.Component với React.createClass"
 date: 2016-02-19 00:39:00
-tag: reactjs
+tags: [reactjs]
 translate:
   url: http://reactjsnews.com/composing-components/
   author: "Naman Goel & Zach Silveira"

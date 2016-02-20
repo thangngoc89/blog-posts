@@ -3,7 +3,7 @@ layout: Post
 title: 'Tạo logo Slack động với CSS3'
 date: 2016-02-02 19:51:00
 image: '/images/2016/slack-logo/slack-featured.png'
-tag: css3
+tags: [css]
 draft: true
 ---
 

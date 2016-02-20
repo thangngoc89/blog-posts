@@ -2,6 +2,7 @@
 layout: Post
 title: Giới thiệu Series Laravel 4 cơ bản
 date: 2015-01-04 14:46:23
+tags: [laravel]
 ---
 
 # Giới thiệu Laravel

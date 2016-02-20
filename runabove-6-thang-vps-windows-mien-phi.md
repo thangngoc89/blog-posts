@@ -1,7 +1,8 @@
 ---
 layout: Post
 title: ! 'RunAbove : 6 tháng VPS 2GB RAM Windows miễn phí'
-date: 2014-11-17 17:38:02.000000000 -05:00
+date: 2014-11-17 17:38:02
+tags: [vps]
 ---
 
 # Giới thiệu RunAbove

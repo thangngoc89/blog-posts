@@ -1,10 +1,9 @@
 ---
 layout: Post
-title: ! 'Database Seeder - Tạo dummy data - Larask Gist'
-date:   2015-03-13 17:00:00
-description: ! '[Series] Larask Gist - Thiết lập Database Seeder , chuẩn bị dummy data'
-tags: dev
-image: /images/2015-13-03/test-dummy.jpg
+title: 'Database Seeder - Tạo dummy data - Larask Gist'
+date: 2015-03-13 17:00:00
+description: '[Series] Larask Gist - Thiết lập Database Seeder , chuẩn bị dummy data'
+tags: [laravel]
 ---
 
 Đây là bài viết thứ 4 trong series [Laravel Gist](/gioi-thieu-series-larask-gist/) .

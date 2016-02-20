@@ -2,7 +2,7 @@
 layout: Post
 title: Giới thiệu Series Discourse cơ bản
 date: 2015-01-07 08:30:20
-tags: discourse
+tags: [discourse]
 ---
 
 Discourse là một dự án mã nguồn mở để xây dựng một nền tảng thảo luận online có thể dùng với các mục đích sau :

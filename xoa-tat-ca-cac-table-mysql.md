@@ -3,7 +3,7 @@ layout: Post
 title: 'Xóa tất cả table trong database MySQL'
 date: 2015-03-15 08:00:00
 description: 'MySQL Procedure giúp xóa nhanh tất cả table trong 1 database'
-tags: mysql
+tags: [mysql]
 ---
 
 Nếu bạn đang dùng mysql command line để quản lí database (nhất là khi sử dụng VPS...) thì bạn sẽ biết rằng MySQL không hỗ trợ việc xóa tất cả table. Cách thường được dùng đó là xóa hẳn database và tạo database mới. Việc này khá tốn thời gian và cần dùng đến 3 câu query dài để thực hiện (gồm xóa, tạo database, cấp quyền cho user).

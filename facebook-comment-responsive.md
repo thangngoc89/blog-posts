@@ -2,7 +2,7 @@
 layout: Post
 title: Facebook Comment Responsive
 date: 2015-01-07 05:16:10.000000000 -05:00
-tags: facebook
+tags: [css]
 ---
 
 Mặc định thì Facebook Comment không hỗ trợ responsive, tuy nhiên với 1 ít hack với CSS và HTML5, Facebook Comment ngay lập tức sẽ hỗ trợ responsive.

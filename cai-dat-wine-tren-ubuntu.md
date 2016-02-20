@@ -2,7 +2,7 @@
 layout: Post
 title: Cài đặt Wine chạy các ứng dụng Windows trên Ubuntu
 date: 2014-11-16 13:31:45
-tags: vps, wine, ubuntu
+tags: [vps]
 ---
 
 # Mở đầu

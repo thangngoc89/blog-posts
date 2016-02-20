@@ -3,7 +3,7 @@ layout: Post
 title: '[Laravel cơ bản] Cài đặt Laravel'
 date: 2015-01-05 19:36:03
 description: 'Cài đặt Laravel - Series Laravel cơ bản'
-tag: laravel
+tags: [laravel]
 ---
 
 # Update 11/03/2015

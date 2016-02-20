@@ -3,7 +3,7 @@ layout: Post
 title: ! 'Migration và Model trong Laravel 5 - Larask Gist'
 date:   2015-03-12 19:00:00
 description: ! 'Hướng dẫn tạo và sử dụng migration trong Laravel 5 - Series Larask Gist'
-tags: larask gist
+tags: [laravel]
 ---
 
 Đây là bài viết thứ hai trong series [Larask Gist](/gioi-thieu-series-larask-gist/) .

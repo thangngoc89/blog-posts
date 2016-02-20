@@ -2,7 +2,8 @@
 layout: Post
 title: Kiếm tiền bằng cách rút gọn và chia sẽ link với Oni.vi (10.000 VND/ 1000 view)
 date: 2014-11-23 11:50:29
-tag: mmo, link shortener
+tags: [mmo]
+
 ---
 
 > # Update 12/01/2015

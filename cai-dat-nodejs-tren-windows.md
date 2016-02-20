@@ -2,6 +2,7 @@
 layout: Post
 title: Cài đặt Node.JS trên Windows
 date: 2015-01-04 23:48:11.000000000 -05:00
+tags: [js]
 ---
 
 Hôm qua mình có cài lại máy, kéo theo đó là một số chương trình cho việc lập trình trong đó có [NodeJS](http://nodejs.org/).

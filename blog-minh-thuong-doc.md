@@ -3,7 +3,7 @@ layout: Post
 title: 'Blog mình thường đọc'
 date: 2015-03-15 06:00:00
 description: 'Tập hợp blog mình thích đọc và follow '
-tags: share, blog
+tags: [link]
 ---
 
 Không có gì đặc biệt ở đây. Chỉ là 1 list những blog của dev mình hay đọc thôi. Để lên đây để chia sẽ cùng với mọi người.

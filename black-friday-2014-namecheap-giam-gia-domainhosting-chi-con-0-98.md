@@ -2,7 +2,7 @@
 layout: Post
 title: '[Black Friday 2014] Namecheap giảm giá Domain/Hosting chỉ còn $0.98'
 date: 2014-11-27 13:49:22
-tag: namecheap, domain, black-friday
+tags: [namecheap, domain, black-friday]
 ---
 
 ![namecheap](https://res.cloudinary.com/khoanguyen/image/upload/v1420479384/namecheap_qgsdxn.png)
