@@ -65,3 +65,25 @@ translate:
   - Bạn có thể đặt tên cho vài tham số trước `...everything` thế này `function foo (bar, ...rest) {}`
   - Các tham số đã được đặt tên sẽ được loại ra khỏi `...rest`
   - `...rest` phải là tham số cuối cùng trong danh sách
+- Spread operator giống như là ma thuật, nó cũng có cú pháp `...`
+  - Không cần dùng `.apply` khi gọi method, `fn(...[1, 2, 3])` tương đương với `fn(1, 2, 3)`
+  - Dễ gộp mạng hơn `[1, 2, ...[3, 4, 5], 6, 7]`
+  - Chuyển đổi các biến dạng mảng hoặc `iterable` thành mảng, ví dụ: `[...document.querySelectorAll('img')]`
+  - Có thể dùng khi destruct, `[a, , ...rest] = [1, 2, 3, 4, 5]` cho ra `a: 1` và `rest: [3, 4, 5]`
+  - Cần thiết khi dùng `new Date` thế này `new Date(...[2015, 31, 8])`
+
+# Arrow function
+
+- Tạo hàm nhanh chóng thế này `param => returnValue`
+- Hữu ích khi lập trình hàm (funtional programing) `[1, 2].map(x => x * 2)`
+- Có nhiều cách để dùng, có thể làm bạn rối lúc đầu
+  - `p1 => expr` khi chỉ có một tham số
+  - `p1 => expr` có nghĩa là hàm sẽ trả về kết quả `expr`
+  - Để trả về một object, đặt nó trong một cặp ngoặc `() => ({ foo: 'bar' })` nếu không sẽ bị lỗi cú pháp
+  - Cặp ngoặc có thể dùng khi bạn có không, một, hai hoặc nhiều tham số hơn `() => expr or (p1, p2) => expr`
+  - Cặp ngoặc bên phải có nghĩa là khối code có thể có nhiều dòng `() => {}`
+  - Khi bạn dùng khối code, sẽ không có `return` tự động, bạn phải thêm vào như mọi khi `() => { return 'foo' }`
+- You can’t name arrow functions statically, but runtimes are now much better at inferring names for most methods.
+- Arrow function gắn với `lexical scope` của chúng.
+  - `this` trong arrow function sẽ giống với `this` ở parent scope.
+  - `this` không thể thay đổi bằng `.call`, `.apply`, hoặc là các phương thức tương tự.
