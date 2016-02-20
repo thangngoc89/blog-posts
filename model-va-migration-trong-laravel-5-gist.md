@@ -119,7 +119,7 @@ Vì vậy, cứ để cho nó null sau này sẽ tính sau.
 Các bạn có thể xem các lệnh khác nhau của
 [class Schema tại đây](http://laravel.com/docs/5.0/schema)
 
-### Gists table
+## Gists table
 
 Chúng ta sẽ đi nhanh qua phần này, ở đây mình có sẵn file migration cho gists table
 
