@@ -6,7 +6,7 @@ date: 2014-11-21 07:34:20
 
 Mặc định thì trên 1 tài khoản mới và VPS mới tạo thì Remote Desktop không được kích. Điều này gây khó khăn cho một số bạn. Bài viết này mình sẽ hướng dẫn cách kích hoạt Remote Desktop trên RunAbove nhé.
 
-Đối với các bạn chưa biết RunAbove là gì thì vui lòng xem [Hướng dẫn đăng kí và tạo VPS với RunAbove tại đây](http://khoanguyen.me/runabove-6-thang-vps-windows-mien-phi/ "RunAbove : 6 tháng VPS 2GB RAM Windows miễn phí")
+Đối với các bạn chưa biết RunAbove là gì thì vui lòng xem [Hướng dẫn đăng kí và tạo VPS với RunAbove tại đây](/runabove-6-thang-vps-windows-mien-phi/ "RunAbove : 6 tháng VPS 2GB RAM Windows miễn phí")
 
 # Hướng dẫn kích hoạt
 
@@ -32,7 +32,7 @@ Tiếp theo, cửa sổ login sẽ xuất hiện
 
 ![setup runabove 1](/images/2015/01/setup-runabove-3_xnb0om.jpg)
 
-</div>Kéo trình duyệt lên trên đầu sẽ thấy nút Send** Ctrl + Alt + Delete.** Nhấn vào đó để đăng nhập
+Kéo trình duyệt lên trên đầu sẽ thấy nút Send** Ctrl + Alt + Delete.** Nhấn vào đó để đăng nhập
 
 ![setup runabove 4](/images/2015/01/setup-runabove-4_rxxrkb.jpg)
 

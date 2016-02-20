@@ -111,4 +111,4 @@ Nếu xuất hiện giao diện như bên dưới là bạn đã tạo VPS thàn
 
 Mấy ngày trước, bạn có thể truy cập [vào đây](https://cloud.runabove.com/login/?launch=power8) để kích hoạt gói VPS PowerV8 và nhận ngay $32 trong tài khoản. Nhưng hiện nay, bạn truy cập vào link trên chỉ kích hoạt gói PowerV8 chứ không có credit.
 
-**Xem thêm:** [Hướng dẫn kích hoạt Remote Desktop của VPS Windows tại RunAbove](http://khoanguyen.me/video-runabove-kich-hoat-remote-desktop/ "[Video] RunAbove : Kích hoạt Remote Desktop")
+**Xem thêm:** [Hướng dẫn kích hoạt Remote Desktop của VPS Windows tại RunAbove](/video-runabove-kich-hoat-remote-desktop/ "[Video] RunAbove : Kích hoạt Remote Desktop")

@@ -33,6 +33,6 @@ Và sắp tới, mình sẽ có một series để giúp các bạn có thể x�
 
  > [Một khóa học PHP cơ bản mình yêu thích](https://www.youtube.com/playlist?list=PLv6GftO355AsZFXlWLKob6tMsWZa4VCY1)
 
- – Hiểu về cách thức hoạt động của [mô hình MVC](http://khoanguyen.me/tim-hieu-mo-hinh-mvc-la-gi/ "Tìm hiểu mô hình MVC là gì?")
+ – Hiểu về cách thức hoạt động của [mô hình MVC](/tim-hieu-mo-hinh-mvc-la-gi/ "Tìm hiểu mô hình MVC là gì?")
 
  – Và tất nhiên là khả năng tự học tìm hiểu thêm các tài liệu.

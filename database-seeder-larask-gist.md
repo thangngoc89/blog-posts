@@ -7,7 +7,7 @@ tags: dev
 image: /images/2015-13-03/test-dummy.jpg
 ---
 
-Đây là bài viết thứ 4 trong series [Laravel Gist](http://khoanguyen.me/gioi-thieu-series-larask-gist/) .
+Đây là bài viết thứ 4 trong series [Laravel Gist](/gioi-thieu-series-larask-gist/) .
 
 Các bạn có thể xem code của project tại [Github](http://github.com/larask/gist).
 
@@ -36,7 +36,7 @@ Các bạn có thể hiểu database seeder là class chứa code để tạo ra
 
 # Tạo seeder
 
-Ở [bài trước](http://khoanguyen.me/model-va-migration-trong-laravel-5-gist/) chúng ta có lệnh `php artisan make:model` để tạo nhanh model và migration cho model. Laravel đi kèm với 1 danh sách các lệnh để tạo nhanh các file. Các bạn có thể xem toàn bộ lệnh của `artisan` bằng cách chạy lệnh `php artisan`. Nhưng rất tiếc, không có lệnh tạo database seeder. Chúng ta sẽ cài đặt package [Laravel 5 Generators Extended](https://github.com/laracasts/Laravel-5-Generators-Extended) để có được lệnh này. Về phần cài đặt, các bạn có thể xem readme để cài đặt.
+Ở [bài trước](/model-va-migration-trong-laravel-5-gist/) chúng ta có lệnh `php artisan make:model` để tạo nhanh model và migration cho model. Laravel đi kèm với 1 danh sách các lệnh để tạo nhanh các file. Các bạn có thể xem toàn bộ lệnh của `artisan` bằng cách chạy lệnh `php artisan`. Nhưng rất tiếc, không có lệnh tạo database seeder. Chúng ta sẽ cài đặt package [Laravel 5 Generators Extended](https://github.com/laracasts/Laravel-5-Generators-Extended) để có được lệnh này. Về phần cài đặt, các bạn có thể xem readme để cài đặt.
 
 Sau khi cài đặt xong. Chúng ta đã có thể sử dụng `php artisan make:seed`. Ở đây, mình sẽ chạy 2 lệnh sau để tạo seeder cho User và Gist.
 

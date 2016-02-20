@@ -18,7 +18,7 @@ Trong bài viết này, mình sẽ hướng dẫn các bạn tạo một project
 
 # 1. Chuẩn bị
 
-- Composer [(hướng dẫn)](http://khoanguyen.me/quan-li-cac-thu-vien-php-voi-composer/ "Quản lí các thư viện PHP với Composer").
+- Composer [(hướng dẫn)](/quan-li-cac-thu-vien-php-voi-composer/ "Quản lí các thư viện PHP với Composer").
 - Một webserver với :
 
   - PHP >= 5.4

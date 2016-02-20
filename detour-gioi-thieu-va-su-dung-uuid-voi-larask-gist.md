@@ -6,7 +6,7 @@ description: '[Series] Larask Gist - Sử dụng UUID để bảo vệ những t
 tags: laravel gist, uuid
 ---
 
-> Đây là bài viết thứ 3 trong series [Laravel Gist](http://khoanguyen.me/gioi-thieu-series-larask-gist/).
+> Đây là bài viết thứ 3 trong series [Laravel Gist](/gioi-thieu-series-larask-gist/).
 > Các bạn có thể xem code của project tại [Github](http://github.com/larask/gist).
 
 ---
