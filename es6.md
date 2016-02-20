@@ -14,6 +14,7 @@ translate:
 - ES6, còn được biết với tên Harmony, `es-next`, ES2015 là bản mô tả mới nhất của Javascript
 - Bản mô tả ES6 hoàn thành vào tháng 6 năm 2015 (vì vậy mới gọi là ES2015)
 - Các bản mô tả tiếp theo của Javascript sẽ được đặt tên theo dạng ES[YYYY], ví dụ ES2016 cho ES7
+
   - Sẽ cập nhật mỗi năm, tính năng nào không hoàn thành sẽ bị hoãn lại tới năm tiếp theo
   - Vì ES6 được bắt đầu trước khi cách gọi mới này ra đời nên chúng ta vẫn thường gọi là ES6
   - Bắt đầu từ ES2016 (ES7), chúng ta nên bắt đầu dùng dạng ES[YYYY] để gọi tên phiên bản Javascript.
@@ -23,6 +24,7 @@ translate:
 
 - Để làm việc với ES6 ngay từ bây giờ, bạn cần transpiler **Javascript-to-Javascript**
 - Transpiler có chức năng
+
   - Biên dịch code của bạn từ phiên bản mới nhất (của Javascript) về phiên bản cũ hơn
   - Khi mà trình duyệt đã tương thích với phiên bản mới, chúng ta sẽ biên dịch từ ES2016 và ES2017 về ES6, ... và tiếp tục như vậy.
   - Hỗ trợ source map
@@ -30,11 +32,11 @@ translate:
 
 - Babel (một transpiler) có một tính năng mà không có đối thủ nào cạnh tranh được: xuất ra code mà bạn **có thể đọc được**
 
-- Dùng `babel` để biên dịch ES6 xuống ES5
-- Dùng `babelify` kết hợp với `babel` cùng với Gulp, Grunt, hoặc npm run trong khi build.
-- Dùng Node.js v4.x.x sẽ có native support cho ES6 (:+1: cho V8)
-- Dùng `babel-node` với bất kì phiên bản node nào, sẽ biên dịch module xuống ES5
-- Babel có một kho plugins và hệ sinh thái phong phú.
+  - Dùng `babel` để biên dịch ES6 xuống ES5
+  - Dùng `babelify` kết hợp với `babel` cùng với Gulp, Grunt, hoặc npm run trong khi build.
+  - Dùng Node.js v4.x.x sẽ có native support cho ES6 (:+1: cho V8)
+  - Dùng `babel-node` với bất kì phiên bản node nào, sẽ biên dịch module xuống ES5
+  - Babel có một kho plugins và hệ sinh thái phong phú.
 
 # Destructuring
 
@@ -50,6 +52,7 @@ translate:
 - Bạn có thể bỏ qua các giá trị trong mảng, `[a, , b] = [0, 1, 2]`, cho ra `a: 0` và `b: 2`
 - Bạn có thể thay đổi vị trí mà không cần biết trung gian `[a, b] = [b, a]`
 - Bạn cũng có thể destruct các tham số của hàm
+
   - Gán giá trị mặc định cho hàm `function foo (bar=2) {}`
   - Giá trị mặc định cũng có thể là object `function foo (bar={ a: 1, b: 2 }) {}`
   - Chúng ta có thể destruct biến `bar` ở trên hoàn toàn thế này `function foo ({ a=1, b=2 }) {}`
@@ -58,12 +61,14 @@ translate:
 # Spread Operator and Rest Parameters
 
 - Rest Parameters (tạm dịch là các tham số còn lại) sẽ `arguments` tốt hơn
+
   - Bạn có thể định nghĩa nó trong hàm thế này `function foo (...everything) {}`
   - `everything` là một mảng gồm tất cả tham số được gửi đến hàm `foo`
   - Bạn có thể đặt tên cho vài tham số trước `...everything` thế này `function foo (bar, ...rest) {}`
   - Các tham số đã được đặt tên sẽ được loại ra khỏi `...rest`
   - `...rest` phải là tham số cuối cùng trong danh sách
 - Spread operator giống như là ma thuật, nó cũng có cú pháp `...`
+
   - Không cần dùng `.apply` khi gọi method, `fn(...[1, 2, 3])` tương đương với `fn(1, 2, 3)`
   - Dễ gộp mạng hơn `[1, 2, ...[3, 4, 5], 6, 7]`
   - Chuyển đổi các biến dạng mảng hoặc `iterable` thành mảng, ví dụ: `[...document.querySelectorAll('img')]`
@@ -75,6 +80,7 @@ translate:
 - Tạo hàm nhanh chóng thế này `param => returnValue`
 - Hữu ích khi lập trình hàm (funtional programing) `[1, 2].map(x => x * 2)`
 - Có nhiều cách để dùng, có thể làm bạn rối lúc đầu
+
   - `p1 => expr` khi chỉ có một tham số
   - `p1 => expr` có nghĩa là hàm sẽ trả về kết quả `expr`
   - Để trả về một object, đặt nó trong một cặp ngoặc `() => ({ foo: 'bar' })` nếu không sẽ bị lỗi cú pháp
@@ -83,5 +89,6 @@ translate:
   - Khi bạn dùng khối code, sẽ không có `return` tự động, bạn phải thêm vào như mọi khi `() => { return 'foo' }`
 - You can’t name arrow functions statically, but runtimes are now much better at inferring names for most methods.
 - Arrow function gắn với `lexical scope` của chúng.
+
   - `this` trong arrow function sẽ giống với `this` ở parent scope.
   - `this` không thể thay đổi bằng `.call`, `.apply`, hoặc là các phương thức tương tự.
