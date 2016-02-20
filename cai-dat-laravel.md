@@ -14,8 +14,6 @@ Phương pháp cài đặt này không còn được khuyến khích. Các bạn
 
 Trong bài viết này, mình sẽ hướng dẫn các bạn tạo một project Laravel mới để chuẩn bị cho việc chinh phục Laravel
 
-@[toc]
-
 # 1. Chuẩn bị
 
 - Composer [(hướng dẫn)](/quan-li-cac-thu-vien-php-voi-composer/ "Quản lí các thư viện PHP với Composer").

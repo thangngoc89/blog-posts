@@ -2,10 +2,11 @@
 layout: Post
 title: iMacros Omnia3 cắm máy kiếm euro tự động
 date: 2014-11-23 10:51:23
+toc: false
 tags: [laravel]
 ---
 
-> Update
+> # Update
 >
 > Mình đã ngừng hỗ trợ cho Ommia3 vì nghi vấn scam
 

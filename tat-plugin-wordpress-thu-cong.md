@@ -7,8 +7,6 @@ tags: [wordpress]
 
 Hôm qua mình có nghịch với mấy cái plugin WordPress và kết quả là không truy cập vào Bảng điểu khiển (Admin Dashboard) được nữa. Nên chẳng thể nào tắt plugin ấy đi được. Sau một hồi tìm kiếm, mình tìm ra tới 2 giải pháp để tắt plugin WordPress mà không cần truy cập và Bảng điều khiển. Mời các bạn tham khảo nếu đang gặp trường hợp này nhé.
 
-@[toc]
-
 # Tắt thông qua các trình quản lí file
 
 Bạn có thể dùng bất cứ công cụ quản lí file nào cũng được (FTP, SSH, cPanel,…) . Nguyên tắc cơ bản chính là đổi tên của thư mục plugin. Khi đó, WordPress sẽ tự động tắt plugin cho bạn.

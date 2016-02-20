@@ -8,6 +8,8 @@ translate:
   author: "Naman Goel & Zach Silveira"
 ---
 
+# Giới thiệu
+
 React hỗ trợ 2 cách để tạo Component.
 Bạn có thể kế thừa từ class `React.Component` hoặc là
 dùng cú pháp cũ `React.createClass` đã có từ khi React ra đời.
@@ -42,8 +44,6 @@ Mặt khác, ES6 class giúp bạn có thể dễ dàng thừa kế (inheritane)
 Nhưng mình khuyên là đừng làm như vậy, hãy bỏ ngay ý tưởng dùng
 ES6 class chỉ để thực hiện một chuỗi thừa kế dài, hãy dùng
 `React.createClass` và kèm với mixin.
-
-@[toc]
 
 # Lí do để dùng `React.createClass`
 

@@ -9,8 +9,6 @@ tags: [laravel]
 Đây là bài viết trong [series Larask Gist](/gioi-thieu-series-larask-gist/).
 Toàn bộ source code của bài viết này bạn có thể xem tại đây: [Larask Gist](https://github.com/Larask/gist/)
 
-@[toc]
-
 # Cài đặt
 
 Trong series này mình sẽ dùng Laragon để hướng dẫn. Vì vậy nếu bạn nào chưa cài đặt Laragon hãy [cài đặt ngay theo hướng dẫn](/laragon-cai-dat-laravel-trong-mot-phut/). (nếu máy bạn đủ khả năng ảo hóa, hãy sử dụng Homestead thay thế)

@@ -9,8 +9,6 @@ translate:
   author: "Pony Foo"
 ---
 
-@[toc]
-
 # Giới thiệu
 
 - ES6, còn được biết với tên Harmony, `es-next`, ES2015 là bản mô tả mới nhất của Javascript

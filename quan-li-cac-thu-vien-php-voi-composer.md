@@ -5,8 +5,6 @@ date: 2015-01-03 13:09:22
 tags: [php, composer]
 ---
 
-@[toc]
-
 # Update
 
 ## 26/01/2016:

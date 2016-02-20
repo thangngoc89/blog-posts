@@ -4,9 +4,8 @@ title: '@each với Laravel Blade'
 date: 2015-03-16 10:00:00
 description: 'Sử dụng @each trong Laravel Blade để giúp template gọn gàng hơn'
 tags: [laravel]
+toc: false
 ---
-
-# Giới thiệu
 
 Làm việc với Laravel, khi bạn gửi 1 collection ra view thì có 2 trường hợp xảy ra
 

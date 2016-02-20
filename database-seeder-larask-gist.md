@@ -77,7 +77,7 @@ class DatabaseSeeder extends Seeder {
 
 Từ này, mỗi khi chúng ta chạy lệnh `php artisan db:seed`, method `run()` trong `UserTableSeeder` và `GistTableSeeder` sẽ được gọi theo thứ tự.
 
-#Dummy Data
+# Dummy Data
 
 Bây giờ là phần quan trọng nhất, dummy data. Và để thuận tiện, chung1ta tiếp tục sử dụng 1 package khác của Laracasts : [Test Dummy](https://github.com/laracasts/TestDummy).
 
