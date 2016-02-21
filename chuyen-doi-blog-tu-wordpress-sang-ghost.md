@@ -3,6 +3,7 @@ layout: Post
 title: Chuyển đổi Blog từ Wordpress sang Ghost
 date: 2015-01-07 08:48:54.000000000 -05:00
 tags: [meta]
+toc: false
 ---
 
 Hôm nay mình đã hoàn thành việc chuyển đổi và chính thức sử dụng Ghost cho Blog của mình
