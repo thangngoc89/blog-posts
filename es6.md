@@ -92,6 +92,7 @@ translate:
 
   - `this` trong arrow function sẽ giống với `this` ở parent scope.
   - `this` không thể thay đổi bằng `.call`, `.apply`, hoặc là các phương thức tương tự.
+
 > Xem thêm: [http://kipalog.com/posts/ECMA-Script-6-fat-arrow-function]
 
 # Template Literals
@@ -140,6 +141,7 @@ translate:
 - Khi dùng `const`, biến cần phải gắn giá trị ngay khi khởi tạo `const foo = 'bar'`
 - Gán giá trị cho `const` sau khi khởi tạo sẽ gây lỗi một ách im lặng hay `throw` trong `"use strict"`.
 - Giá trị của biến `const` không phải là hằng định (immutable)
+
   - `const foo = { bar: 'baz' }; foo.bar = 'boo'` sẽ không `throw` lỗi
 - Khởi tạo biến cùng tên sẽ `throw` lỗi
 - Định tạo ra để khắc phục vấn đề ghi đè biến.
