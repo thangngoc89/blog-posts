@@ -156,9 +156,9 @@ If a symbol with the provided key already existed, you get that one back
 Otherwise, a new symbol is created, using key as its description as well
 Symbol.keyFor(symbol) is the inverse function, taking a symbol and returning its key
 Global symbols are as global as it gets, or cross-realm. Single registry used to look up these symbols across the runtime
-window context
-eval context
-<iframe> context, Symbol.for('foo') === iframe.contentWindow.Symbol.for('foo')
+`window context`
+`eval context`
+`<iframe> context, Symbol.for('foo') === iframe.contentWindow.Symbol.for('foo')`
 There’s also “well-known” symbols
 Not on the global registry, accessible through Symbol[name], e.g: Symbol.iterator
 Cross-realm, meaning Symbol.iterator === iframe.contentWindow.Symbol.iterator
