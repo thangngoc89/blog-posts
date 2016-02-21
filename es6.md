@@ -88,7 +88,83 @@ translate:
   - Cặp ngoặc bên phải có nghĩa là khối code có thể có nhiều dòng `() => {}`
   - Khi bạn dùng khối code, sẽ không có `return` tự động, bạn phải thêm vào như mọi khi `() => { return 'foo' }`
 - You can’t name arrow functions statically, but runtimes are now much better at inferring names for most methods.
-- Arrow function gắn với `lexical scope` của chúng.
+- Scope trong arrow function chính là scope của chính arrow function
 
   - `this` trong arrow function sẽ giống với `this` ở parent scope.
   - `this` không thể thay đổi bằng `.call`, `.apply`, hoặc là các phương thức tương tự.
+> Xem thêm: [http://kipalog.com/posts/ECMA-Script-6-fat-arrow-function]
+
+# Template Literals
+
+- Bạn có thể định nghĩa chuỗi với dấu `` ` `` (backtick), thay vì kiểu cũ là `"` và `'`
+- Chuỗi mà bao trong dấu backtick gọi là template literals
+- Template literals có thể gồm nhiều dòng
+- Template literals cho phép bạn đặt biến vào thế này `khoanguyen.me is ${rating}` (với `rating` là một biến)
+- Bạn có thể đặt vào bất cứ thứ gì hợp lệ với Javascript trong cặp ngoặc như `${2 * 3}` hoặc `${foo()}`
+- Bạn có thể thay đổi kết quả kết template literals
+
+  - Thêm vào trước `fn` thế này ``fn`foo, ${bar} and ${baz}```
+  - `fn` sẽ được gọi với tham số  `template, ...expressions`
+  - `template` là `['foo, ', ' and ', '']` và `expressions` là `[bar, baz]`
+  - Kết quả trả về của `fn` sẽ trở thành giá trị của template literal.
+- Tổng kết lại thì định nghĩa chuỗi với template literals tốt hơn so với việc dùng cặp nháy đơn hay nháy kép
+
+# Object Literals
+
+- Thay vì phải viết `{ foo: foo }`, bây giờ bạn chỉ cần viết  `{ foo }` – đây được gọi *property value shorthand* (tạm dịch: định nhanh giá trị của thuộc tính)
+- Tính toán tên thuộc tính (*Computed property names*), `{ [prefix + 'Foo']: 'bar' }`, khi `prefix: 'moz'`, sẽ cho ra kết quả `{ mozFoo: 'bar' }`
+- Bạn không thể kết hợp computed property names và property value shorthands, `{ [foo] }` là không hợp lệ
+- Bạn có thể định method cho object literal bằng cú pháp nhanh này: `{ foo () {} }`
+
+# Class
+
+- Không phải là class như OOP, chỉ là một cú pháp gọn hơn dựa trên prototype
+- Cú pháp giống như định object `class Foo {}`
+- Instance methods – `new Foo().bar` – được định nghĩa nhờ cú pháp *object literal* như trên `class Foo { bar () {} }`
+- Static methods – `Foo.isPonyFoo()` – cần thêm `static` vào trước, `class Foo { static isPonyFoo () {} }`
+- Constructor  `class Foo { constructor () { /* initialize instance */ } }`
+- Thừa kế nhờ cấu trúc thế này `class PonyFoo extends Foo {}`
+
+# Let và Const
+
+- `let` và `const` là hai cách khác ngoài `var` để khởi tạo biến.
+- `let` là `block-scoped` thay vì `lexically scoped` như hàm.
+- `let` gắn với `block` hiện tại, trong khi `var` gắn với `block` của hàm
+- “Temporal Dead Zone” (gọi tắt TDZ)
+
+  - Bắt đầu ở `block` mà `let foo` được khởi tạo
+  - Kết thúc khi thực hiện câu lệnh khởi tạo `let foo`
+  - Cố gắng truy cập hoặc gán biến trong vùng TDZ (tức là trước câu lên `let foo`) sẽ gây ra lỗi
+  - Giúp tránh các lỗi đau đầu khi biến bị thay đổi trước khi nó được khởi tạo (có thể hiểu như là `"use strict"`)
+- `const` cũng là `block-scoped` gắn và ràng buộc bởi TDZ
+- Khi dùng `const`, biến cần phải gắn giá trị ngay khi khởi tạo `const foo = 'bar'`
+- Gán giá trị cho `const` sau khi khởi tạo sẽ gây lỗi một ách im lặng hay `throw` trong `"use strict"`.
+- Giá trị của biến `const` không phải là hằng định (immutable)
+  - `const foo = { bar: 'baz' }; foo.bar = 'boo'` sẽ không `throw` lỗi
+- Khởi tạo biến cùng tên sẽ `throw` lỗi
+- Định tạo ra để khắc phục vấn đề ghi đè biến.
+
+# Symbol
+
+- Một kiểu dữ liệu mới của ES6
+- Bạn có thể khởi tạo symbol thế này `var symbol = Symbol()`
+- Bạn có thể thêm chú thích để dễ debug `Symbol('ponyfoo')`
+- Symbol là hằng định và độc nhất. `Symbol(), Symbol(), Symbol('foo') và Symbol('foo')` cả 4 giá trị trên khác nhau hoàn toàn.
+- `typeof Symbol() === 'symbol'`
+- You can also create global symbols with Symbol.for(key)
+If a symbol with the provided key already existed, you get that one back
+Otherwise, a new symbol is created, using key as its description as well
+Symbol.keyFor(symbol) is the inverse function, taking a symbol and returning its key
+Global symbols are as global as it gets, or cross-realm. Single registry used to look up these symbols across the runtime
+window context
+eval context
+<iframe> context, Symbol.for('foo') === iframe.contentWindow.Symbol.for('foo')
+There’s also “well-known” symbols
+Not on the global registry, accessible through Symbol[name], e.g: Symbol.iterator
+Cross-realm, meaning Symbol.iterator === iframe.contentWindow.Symbol.iterator
+Used by specification to define protocols, such as the iterable protocol over Symbol.iterator
+They’re not actually well-known – in colloquial terms
+Iterating over symbol properties is hard, but not impossible and definitely not private
+Symbols are hidden to all pre-ES6 “reflection” methods
+Symbols are accessible through Object.getOwnPropertySymbols
+You won’t stumble upon them but you will find them if actively looking
