@@ -3,6 +3,7 @@ layout: Post
 title: Tạo menu cho Discourse
 date: 2015-01-09 00:10:59
 tags: [discourse, css]
+toc: false
 ---
 
 # Giới thiệu
@@ -25,25 +26,25 @@ Với công cụ tích hợp của Discourse thì việc sửa/ thêm style tr�
 
 ```css
 ul#top-navbar-links {
-    margin: 0;
-    padding: 0;
-    float: right
+  margin: 0;
+  padding: 0;
+  float: right
 }
 #top-navbar-links li {
-    list-style: none;
-    display: inline;
-    margin: 0 0 0 20px;
-    padding: 0;
+  list-style: none;
+  display: inline;
+  margin: 0 0 0 20px;
+  padding: 0;
 }
 
 #top-navbar-links li a {
-    font-size: 12px;
-    line-height: 40px;
-    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FF4742;
-    display: inline-block;
+  font-size: 12px;
+  line-height: 40px;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FF4742;
+  display: inline-block;
 }
 
 #top-navbar-links li a:hover,
