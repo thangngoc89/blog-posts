@@ -49,7 +49,7 @@ npm set registry http://127.0.0.1:5080
 npm set registry https://registry.npmjs.org
 ```
 
-- local-npm còn công cấp cho bạn một giao diện kiểu như npm để bạn có thể duyệt các package offline. Nhưng bạn phải đợi cho local-npm replicate hoàn toàn database của npm về máy đã. Bạn có thể truy cập vào [http://localhost:5080/_browse/#/] để sử dụng
+- local-npm còn cung cấp cho bạn một giao diện kiểu như npm để bạn có thể duyệt các package offline. Nhưng bạn phải đợi cho local-npm replicate hoàn toàn database của npm về máy đã. Bạn có thể truy cập vào [http://localhost:5080/_browse/#/] để sử dụng
 
 ![local-npm UI](./ui.png)
 
