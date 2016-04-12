@@ -188,6 +188,6 @@ Làm tương tự với User Model. Như vậy từ nay, khi muốn sử dụng 
 
 *Lưu ý: `public $incrementing = false;` có thể đặt tại `app/UuidModel.php` nhưng vì li do nào đó mà nó làm fail PHPUnit nên mình tạm thời đặt nó ở đây. Sẽ refactor tiếp khi cần thiết*
 
-# Kết luận:
+# Kết luận
 
 Qua bài này, chúng ta đã biết được cách sử dụng Uuid với Eloquent Model. Chúng ta đã sửa và thêm vào không quá 20 dòng code. Tất cả đều nhờ vào sự "thần kì" của Laravel.

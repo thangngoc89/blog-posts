@@ -3,6 +3,7 @@ layout: Post
 title: Free VPS 7 ngày 2GB RAM Windows Server từ CloudSigma
 date: 2014-11-24 16:46:11.000000000 -05:00
 tags: [vps]
+toc: false
 ---
 
 Hiện tại CloudSigma đang có chương trình free trial VPS với các thông số như sau:
