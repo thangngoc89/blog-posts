@@ -100,7 +100,7 @@ các SSG
 # Tải nội dung
 
 - Các bài viết được viết dưới dạng markdown trên diễn đàn DNH.
-- Đây là topic tổng hợp các viết của khóa học: [http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429]
+- [Đây là topic tổng hợp các bài viết của khóa học](http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429)
 - [Đầu tiên mình sẽ tải file markdown của bài viết tổng hợp ở trên về](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/fetch-data.js)
 [tại đây](http://daynhauhoc.com/raw/29429)
 - [Chuyển cáu trúc trên thành dạng cây](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/parse-toc.js)
