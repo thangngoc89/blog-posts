@@ -103,14 +103,14 @@ các SSG
 - [Đây là topic tổng hợp các bài viết của khóa học](http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429)
 - [Đầu tiên mình sẽ tải file markdown của bài viết tổng hợp ở trên về](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/fetch-data.js)
 [tại đây](http://daynhauhoc.com/raw/29429)
-- [Chuyển cáu trúc trên thành dạng cây](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/parse-toc.js)
+- [Chuyển cấu trúc trên thành dạng cây](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/parse-toc.js)
 - [Cuối cùng là tải từng bài viết về và lưu vào thư mục `content`](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/download-post.js)
 
 # Tự động tạo và đăng tải website
 
 - Mình dùng [Travis CI](https://travis-ci.org) để tự động tạo và đăng tải website mỗi khi mình push bất kì chỉnh sửa nào lên Github.
 
-> [Hướng dẫn cầu hình Travis CI từ Phenomic](https://phenomic.io/docs/usage/gh-pages/#automatically-with-travis-ci)
+> [Hướng dẫn cấu hình Travis CI từ Phenomic](https://phenomic.io/docs/usage/gh-pages/#automatically-with-travis-ci)
 
 - Travis CI cũng đảm nhận việc đăng tải website hoàn thành lên Github
 
