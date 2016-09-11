@@ -5,7 +5,7 @@ lượt truy cập mối tháng mà chỉ tốn $0.0002/tháng như thế nào'
 date: 2016-09-11 17:00:00
 tags: [case study, phenomic, static website]
 draft: true
-toc: false
+toc: true
 ---
 
 Nếu bạn là thành viên của [Dạy Nhau Học (DNH)](http://daynhauhoc.com) thì các bạn có
@@ -27,7 +27,9 @@ không cần phải phải qua xử lí với PHP, Node.js, Ruby hay bất kì n
 
 Ưu điểm của static website:
 
-- An toàn: Chẳng có bất kì logic để hacker lợi dụng ở đây. Nếu hacker có vào được
+## An toàn
+
+Chẳng có bất kì logic để hacker lợi dụng ở đây. Nếu hacker có vào được
 máy chủ của bạn thì thứ mà hắn ta thấy chỉ là các file HTML. Bạn không cần là một
 hacker cũng có thể tải tất cả các file này về với một dòng lệnh
 
@@ -45,22 +47,28 @@ $ wget \
 
 (Nguồn: [Linux Journal](http://www.linuxjournal.com/content/downloading-entire-web-site-wget))
 
-- Nhanh: Máy chủ chỉ việc gửi các file HTML có sẵn về nên truy cập web tĩnh
+## Nhanh
+
+Máy chủ chỉ việc gửi các file HTML có sẵn về nên truy cập web tĩnh
 sẽ siêu nhanh. Có thể đạt tốc độ mili giây mà không cần phải tối ưu hóa gì
 
-- Rẻ: Vì web tĩnh là một xu hướng hiện nay nên có nhiều dịch vụ chuyên về hosting
+## Rẻ
+
+Vì web tĩnh là một xu hướng hiện nay nên có nhiều dịch vụ chuyên về hosting
 cho web tĩnh. Một số dịch vụ còn miễn phí. Ví dụ:
-  - [Github Pages](https://pages.github.com) - Miễn phí hoàn toàn. Mình dùng
-    Github Pages để host website Học C++
-  - [Gitlab Pages](https://pages.gitlab.com) - Miễn phí hoàn toàn
-  - [Amazon S3 + Amazon Cloudfront](https://aws.amazon.com) - Trả phí, tính theo
-    dung lượng và băng thông
-  - [Netlify](https://netlify.com) - Miễn phí kèm các gói nâng cấp từ $9 đến $49/ tháng
-  - [Surge.sh](https://surge.sh) - Miễn phí kèm gói nâng cấp $9
-  - [Aerobatic](https://www.aerobatic.com/) - Miễn phí kèm với các gói nâng cấp
-    từ $10 đến 200$/ tháng
+
+- [Github Pages](https://pages.github.com) - Miễn phí hoàn toàn. Mình dùng
+Github Pages để host website Học C++
+- [Gitlab Pages](https://pages.gitlab.com) - Miễn phí hoàn toàn
+- [Amazon S3 + Amazon Cloudfront](https://aws.amazon.com) - Trả phí, tính theo
+  dung lượng và băng thông
+- [Netlify](https://netlify.com) - Miễn phí kèm các gói nâng cấp từ $9 đến $49/ tháng
+- [Surge.sh](https://surge.sh) - Miễn phí kèm gói nâng cấp $9
+- [Aerobatic](https://www.aerobatic.com/) - Miễn phí kèm với các gói nâng cấp
+  từ $10 đến 200$/ tháng
 
 > Tham khảo thêm :
+>
 > - [What is a static website](http://nilclass.com/courses/what-is-a-static-website)
 > - [Why Static? - by DatoCMS](https://www.datocms.com/why-static/)
 
@@ -93,7 +101,7 @@ các SSG
 # Tải nội dung
 
 - Các bài viết được viết dưới dạng markdown trên diễn đàn DNH.
-- Đây là topic tổng hợp các viết của khóa học: http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429
+- Đây là topic tổng hợp các viết của khóa học: [http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429]
 - [Đầu tiên mình sẽ tải file markdown của bài viết tổng hợp ở trên về](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/fetch-data.js)
 [tại đây](http://daynhauhoc.com/raw/29429)
 - [Chuyển cáu trúc trên thành dạng cây](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/parse-toc.js)
@@ -121,9 +129,9 @@ bất kì chi phí nào mà).
 
 Host free với cronjob cũng là một lưa chọn, nhưng:
 
-  - Mình không chơi với PHP nữa :D
-  - Đoạn script để kích hoạt Travis CI cần Github token của mình nên bỏ token đó
-    lên shared host không an toàn tí nào.
+- Mình không chơi với PHP nữa :D
+- Đoạn script để kích hoạt Travis CI cần Github token của mình nên bỏ token đó
+  lên shared host không an toàn tí nào.
 
 Giải pháp của mình là dùng Amazon Lambda kèm với Amazon Cloudwatch để thay thế
 cronjob. Mình chọn [Serverless Framework](https://serverless.com/) để tự động
