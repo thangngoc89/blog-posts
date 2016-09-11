@@ -1,6 +1,6 @@
 ---
 layout: Post
-title: 'Tối đã thiết kế trang web học C++ của Dạy Nhau Học mà không tốn chi phí hosting như thế nào'
+title: 'Tôi đã thiết kế trang web học C++ của Dạy Nhau Học mà không tốn chi phí hosting như thế nào'
 date: 2016-09-11 17:00:00
 tags: [case study, phenomic, static website]
 draft: true
@@ -93,6 +93,49 @@ các SSG
 
 - Các bài viết được viết dưới dạng markdown trên diễn đàn DNH.
 - Đây là topic tổng hợp các viết của khóa học: http://daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429
-- Đầu tiên mình sẽ tải file markdown của bài viết tổng hợp ở trên về
+- [Đầu tiên mình sẽ tải file markdown của bài viết tổng hợp ở trên về](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/fetch-data.js)
 [tại đây](http://daynhauhoc.com/raw/29429)
-- Chuyển cáu trúc trên thành dạng cây
+- [Chuyển cáu trúc trên thành dạng cây](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/parse-toc.js)
+- [Cuối cùng là tải từng bài viết về và lưu vào thư mục `content`](https://github.com/thangngoc89/dnh-cpp/blob/4053532715b1e4d678a2fe99483f68fddedb018d/scripts/content/download-post.js)
+
+# Tự động tạo và đăng tải website
+
+- Mình dùng [Travis CI](https://travis-ci.org) để tự động tạo và đăng tải website mỗi khi mình push bất kì chỉnh sửa nào lên Github.
+
+> [Hướng dẫn cầu hình Travis CI từ Phenomic](https://phenomic.io/docs/usage/gh-pages/#automatically-with-travis-ci)
+
+- Travis CI cũng đảm nhận việc đăng tải website hoàn thành lên Github
+
+# Tự động tạo trang web mỗi ngày
+
+Vì Travis CI chỉ chạy mỗi khi mình push lên Github nên mình cần phải thiết lập
+cronjob tự động kích hoạt Travis CI build mỗi ngày 2 lần để cập nhật các nội
+dung mới của khóa học.
+
+Suy nghĩ đầu tiên là dùng một host/ VPS nào đó để thực hiện việc này.
+
+VPS rẻ nhất là cỡ $5/tháng, và chạy một VPS 24/7 để chỉ thực hiện một công việc
+mỗi ngày 2 lần là quá phí phạm. (Dù gì thì host toàn bộ trang web chẳng tốn
+bất kì chi phí nào mà).
+
+Host free với cronjob cũng là một lưa chọn, nhưng:
+
+  - Mình không chơi với PHP nữa :D
+  - Đoạn script để kích hoạt Travis CI cần Github token của mình nên bỏ token đó
+    lên shared host không an toàn tí nào.
+
+Giải pháp của mình là dùng Amazon Lambda kèm với Amazon Cloudwatch để thay thế
+cronjob. Mình chọn [Serverless Framework](https://serverless.com/) để tự động
+hóa việc upload, và thiết lập Amazon Lambda cho mình. (Vì Dashboard của AWS
+rất củ chuối).
+
+Các bạn có thể xem [toàn bộ Lambda function kèm với cấu hình ở đây](https://github.com/thangngoc89/dnh-cpp/tree/4053532715b1e4d678a2fe99483f68fddedb018d/cron)
+
+Chi phí cho Amazon Lambda và Cloudwatch là siêu rẻ. Mình ước tính khoảng
+$0.0002/tháng. [- xem chi tiết](https://gist.github.com/thangngoc89/7775c62a93d69800010bdcc0c8889f6c)
+
+# Kết luận
+
+Web tĩnh là một xu hướng hiện nay, dùng đúng công cụ và dịch vụ, các bạn có thể
+tạo ra một trang web hoàn toàn miễn phí sẵn sàng phục vụ cho hàng triệu lượt
+truy cập mỗi tháng.
