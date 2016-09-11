@@ -4,7 +4,6 @@ title: 'Tôi đã thiết kế trang web học C++ của Dạy Nhau Học phục
 lượt truy cập mỗi tháng với $0.0002 thế nào'
 date: 2016-09-11 17:00:00
 tags: [case study, phenomic, static website]
-draft: true
 toc: true
 ---
 
